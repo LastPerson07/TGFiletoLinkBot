@@ -1,4 +1,4 @@
-# Thunder/vars.py
++# Thunder/vars.py
 
 import os
 
@@ -61,7 +61,7 @@ class Var:
 
     SET_COMMANDS: bool = str_to_bool(os.getenv("SET_COMMANDS", "True"))
 
-    DATABASE_URL: str = os.getenv("DATABASE_URL", "mongodb+srv://AutoFilterBot:22mU96umWQkSGXYF@cluster0.f87pcmx.mongodb.net/?appName=Cluster0")
+    DATABASE_URL: str = os.getenv("DATABASE_URL", "mongodb+srv://AutoFilterBot:1kmhOrBtWpwj4Tkg@filetolink.cxboqwd.mongodb.net/?appName=filetolink")
 
     if not DATABASE_URL:
         logger.critical("DATABASE_URL is required")
@@ -100,3 +100,4 @@ class Var:
     MAX_FILES_PER_PERIOD: int = int(os.getenv("MAX_FILES_PER_PERIOD", "2"))
     RATE_LIMIT_PERIOD_MINUTES: int = int(os.getenv("RATE_LIMIT_PERIOD_MINUTES", "1"))
     MAX_QUEUE_SIZE: int = int(os.getenv("MAX_QUEUE_SIZE", "100"))
+
