@@ -25,8 +25,8 @@ def str_to_int_set(val: str) -> Set[int]:
 
 
 class Var:
-    API_ID: int = int(os.getenv("API_ID", "34857357"))
-    API_HASH: str = os.getenv("API_HASH", "1e8f2a02989b22ef1e55340375bbdaa8")
+    API_ID: int = int(os.getenv("API_ID", ""))
+    API_HASH: str = os.getenv("API_HASH", "")
     BOT_TOKEN: str = os.getenv("BOT_TOKEN", "8333013679:AAHSwOv7ddqLxWcdqfl_OI3sh_2Kar-TEx0")
 
     if not all([API_ID, API_HASH, BOT_TOKEN]):
